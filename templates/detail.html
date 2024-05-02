@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Detail</title>
+</head>
+<body>
+<img src="{{ book.image.url }}"/><br>
+Genre: {{ book.genre }}<br>
+Title: {{ book.title }}<br>
+Price: {{ book.price }}<br>
+Cover type: {{ book.cover_type }}<br>
+Description: {{ book.description }}<hr/>
+
+<a href="{% url 'get_info'%}" ><button>TO HOME PAGE</button></a><br>
+</body>
+</html>

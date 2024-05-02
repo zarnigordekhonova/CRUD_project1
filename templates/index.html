@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BOOKSHOP</title>
+</head>
+<body>
+<h1>HOME PAGE</h1><br>
+<h2>GENRES</h2>
+{% for genre in genres %}
+<a href="{% url 'get_books' genre.pk %}" >{{ genre.name }}</a><br>
+{% endfor %}
+</body>
+</html>
