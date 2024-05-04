@@ -1,9 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Detail</title>
-</head>
+<title>Detail</title>
+
+
+
 <body>
 <img src="{{ book.image.url }}"/><br>
 Genre: {{ book.genre }}<br>
@@ -11,7 +9,29 @@ Title: {{ book.title }}<br>
 Price: {{ book.price }}<br>
 Cover type: {{ book.cover_type }}<br>
 Description: {{ book.description }}<hr/>
+<a href="{% url 'Books:update_books' book.pk %}" >Update</a><br>
+<a href="{% url 'Books:delete_book' book.pk %}" >Delete</a><br>
+<br>
+<a href="{% url 'Books:get_info'%}" >Home</a><br>
 
-<a href="{% url 'get_info'%}" ><button>TO HOME PAGE</button></a><br>
+
+
 </body>
-</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
